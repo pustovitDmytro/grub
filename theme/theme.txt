@@ -1,0 +1,32 @@
+#Global Property
+title-text: "Welcome home, Dmytro Tarasovich"
+title-font: "Unknown Regular 16"
+title-color: "yellow"
+#desktop-color: "#000000"
+desktop-image: "/boot/grub/theme/1.jpg"
+# Show the boot menu
++ boot_menu {
+left = 10%
+top = 15%
+width = 85%
+height = 75%
+item_font = "Unknown Regular 16"
+item_color = "lightgreen"
+selected_item_color = "yellow"
+item_height = 20
+item_padding = 10 # Vertical spacing between menuentries.
+item_spacing = 10
+}
+# Show a circular progress bar
++ circular_progress {
+id = "__timeout__"
+left = 20%
+top = 50%
+width = 200
+height = 200
+num_ticks = 6
+start_angle = -56
+ticks_disappear = true
+center_bitmap = "/boot/grub/theme/clock.png"
+tick_bitmap = "/boot/grub/theme/point.png"
+}
