@@ -3,7 +3,7 @@ title-text: "Welcome home, Dmytro Tarasovich"
 title-font: "Unknown Regular 16"
 title-color: "yellow"
 #desktop-color: "#000000"
-desktop-image: "/boot/grub/theme/1.jpg"
+desktop-image: "images/1.jpg"
 # Show the boot menu
 + boot_menu {
 left = 10%
@@ -27,6 +27,6 @@ height = 200
 num_ticks = 6
 start_angle = -56
 ticks_disappear = true
-center_bitmap = "/boot/grub/theme/clock.png"
-tick_bitmap = "/boot/grub/theme/point.png"
+center_bitmap = "icons/clock.png"
+tick_bitmap = "icons/point.png"
 }
