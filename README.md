@@ -1,4 +1,4 @@
-#grub
+# grub
 
 custom menu for GRUB4DOS
 
