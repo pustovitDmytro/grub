@@ -1,26 +1,35 @@
 #grub
 
+custom menu for GRUB4DOS
+
 to save changes run
-	sudo update-grub
+```sh
+sudo update-grub
+```
 
-
-#etc/default/grub:
+in the file `etc/default/grub`:
+```
 default menu item (starts from 0)
 GRUB_DEFAULT=2
+```
 
-time before the default variant will boot
+set time, after what the default variant will boot:
+```
 GRUB_TIMEOUT=6
-
-full path to grub theme
+```
+set full path to grub theme:
+```
 GRUB_THEME=/boot/grub/theme/theme.txt
+```
 
-
-#/etc/grub.d/40_custom:
-
+in the file `/etc/grub.d/40_custom`:
+```
 menuentry "Shutdown"{
 	halt
 }
-
+```
+```
 menuentry "Reboot"{
 	reboot
 }
+```
